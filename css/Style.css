@@ -255,13 +255,19 @@ main .blog .blog-post {
 }
 
 main .blog-post .blog-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     width: 80%;
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 40px 0;
 }
+
 
 main .blog-content .blog-title {
     padding: 2rem 0;
@@ -376,7 +382,7 @@ main .post-content .post-title a {
     color: var(--white);
 }
 
-.blog-content {
+/* .blog-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -384,7 +390,7 @@ main .post-content .post-title a {
     align-self: center;
     align-content: center;
     border-radius: 40px 0;
-}
+} */
 
 .blog-content>img {
     border-radius: 40px 0 0 0;
@@ -470,6 +476,50 @@ main .post-content .post-title a {
 .pNosotros {
     font-size: 1.5em;
     width: 700px;
+}
+
+#nosotros .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+#nosotros .container>div {
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 40px 0;
+}
+
+#nosotros .container>div>img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px 0 0 0;
+}
+
+#nosotros .container>div span {
+    display: block;
+    font-family: var(--Abel);
+    /* background-color: var(--rojo); */
+}
+
+#nosotros .container>div button {
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
 }
 
 /* -------x------- Sidebar -----------x----------- */
@@ -628,6 +678,7 @@ footer.footer .move-up span:hover {
         align-items: center;
         align-self: center;
         align-content: center;
+        padding: 0;
     }
 
     .nav .toggle-collapse {
@@ -652,7 +703,7 @@ footer.footer .move-up span:hover {
 
 @media only screen and (max-width: 520px) {
     main .blog {
-        height: 125vh;
+        height: 165vh;
     }
 
     /* .nav-menu {
@@ -682,9 +733,18 @@ footer.footer .move-up span:hover {
         width: 80% !important;
     }
 
+    .blog-content {
+        width: 200px;
+    }
+
     .pNosotros {
         width: 270px;
         font-size: 20px;
+    }
+
+    #nosotros .container {
+        flex-direction: column;
+        /* margin-bottom: 10px; */
     }
 
 }

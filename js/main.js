@@ -33,6 +33,7 @@ $(document).ready(function () {
         rewind: true,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        // responsiveClass: true,
         responsive: responsive
     });
 
