@@ -703,7 +703,7 @@ footer.footer .move-up span:hover {
 
 @media only screen and (max-width: 520px) {
     main .blog {
-        height: 165vh;
+        height: 180vh;
     }
 
     /* .nav-menu {
@@ -749,4 +749,16 @@ footer.footer .move-up span:hover {
 
 }
 
+
 /*        x      Viewport less then or equal to 520px       x     */
+
+@media only screen and (max-width: 375px) {
+    main .blog {
+        height: 220vh;
+    }
+
+    #nosotros .container>div {
+        width: 220px;
+        height: 350px;
+    }
+}
